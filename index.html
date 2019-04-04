@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ss5_task3_timGiaTriTrongMang</title>
+</head>
+<body>
+<script>
+    var array = [0,1,2,3,4,5];
+    var inputNumber;
+    do {
+        alert('Xin ban hay nhap mot so nguyen!');
+        inputNumber = Number(prompt('Nhap so can kiem tra: '));
+    }
+    while (!Number.isSafeInteger(inputNumber))
+    console.log(inputNumber);
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] == inputNumber){
+            alert('So ban nhap co trong day o vi tri ' + (i));
+            console.log(i);
+            break;
+        }
+        if (i == 5) {
+            alert ('Khong tim so ban nhap trong day');
+        }
+    }
+</script>
+</body>
+</html>
